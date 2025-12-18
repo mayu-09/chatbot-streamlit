@@ -1,3 +1,6 @@
+streamlit
+scikit-learn
+
 import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -40,3 +43,4 @@ st.title("Smart Chatbot 🌱")
 user_input = st.text_input("You:", "")
 if user_input:
     st.write("Bot:", chatbot_response(user_input))
+
